@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="upload.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Google Sans Text' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/954e575aaa.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="uploadform">
+
+    <div id="waiting">
+        <p id="w1"></p>
+        <p id="w2"></p>
+        <p id="w3"></p>
+        <p id="w4"></p>
+    </div>
+
+    <div id="joinform">
+        <img src="https://img.freepik.com/premium-vector/testing-illustration_916413-10.jpg">
+        <div>
+            <h1 style="font-size: 30px;border:0px;font-weight: 700;color:black">Create your Channel</h1>
+            <input placeholder="Channel name" id="creatorname" maxlength="12">
+            <input placeholder="Url for your logo" id="profilepic">
+            <button id="submitform" style="width:300px">Create</button>
+        </div>
+
+
+    </div>
+
+
+    <div id="uploadcnt">
+        <h2 id="uploaded">✓</h2>
+        <button id="ok">Close</button>
+    </div>
+
+    <nav id="navbar"><button id="cancel" style="margin-left: 0px;"><i class="fa-solid fa-xmark"></i></button>
+        <p style="font-size: 25px;color:rgb(0, 120, 179);">Sphere <span style="color:rgb(51, 51, 51)">Notepad</span>
+        </p>
+    </nav>
+    <div id="top-hero"> </div>
+    <div id="userinfobar">
+        <div id="imageuser3"></div>
+        <div id="usid"><input id="chname" disabled>
+            <p id="usem">crwaetor</p>
+        </div>
+
+    </div>
+
+    <div id="er">
+        <button id="ca">
+            <i class="fa-solid fa-pen-clip"></i> Article </button>
+        <button id="cf" style="background-color:rgb(255, 255, 255);color:black;">
+            <i class="fa-regular fa-image"></i> Infocard </button>
+    </div>
+
+
+    <h1 style="margin-top: 80px;font-size: 30px;">Create your thumbnail</h1>
+    <div id="thumbnail">
+        <div id="sideimg">
+
+        </div>
+        <div id="sidetext">
+        <label style="margin-left:30px;color:rgb(0, 0, 0);font-size: 30px;">Choose a domain: </label>
+
+        <select name="Domain" id="domainselector">
+            <option value="programming">programming</option>
+            <option value="innovation">innovation</option>
+            <option value="general">nature</option>
+            <option value="science">Science</option>
+            <option value="space">Space</option>
+            <option value="more">Story</option>
+        </select>
+
+
+        <input placeholder="Description of you article" type="text" maxlength="80" id="heading" required>
+        <input placeholder="Image url from chrome or edge." type="url" id="imageurl" required>
+        <input placeholder="Readtime in minutes" required id="readtime" type="number">
+    </div>
+    </div>
+
+
+    
+    <div id="notepad">
+        <div id="nav3">
+            <row><button id="addheading"><i class="fa-solid fa-heading"></i></button><button id="addtext"><i
+                        class="fa-regular fa-keyboard"></i></button><button id="addboldtext"><i
+                        class="fa-solid fa-text-height"></i></button><button id="addimage"><i
+                        class="fa-regular fa-image"></i></button><button id="addcode"><i
+                        class="fa-solid fa-code"></i></button>
+                        <button id="addlink">link</button>
+                <button style="background-color: rgb(2, 80, 198);margin:30px;color:white" id="undo"><i
+                        class="fa-solid fa-arrow-rotate-left"></i></button>
+            </row>
+        </div>
+        <textarea id="maincontent" required></textarea>
+        <div id="preview">
+        </div>
+
+
+       
+    </div>
+    <div id="flashcardpad">
+
+        <div id="demo2">
+            <div id="flimg"></div>
+            <h1 id="fltext">Your text will be shown here...
+            </h1>
+            <div id="ijk"><button id="prev"><i class="fa-solid fa-angle-left"></i></button><button id="next"><i class="fa-solid fa-chevron-right"></i></button></div>
+
+        </div>
+        <div id="cardpart">
+            <button id="undofl">Undo</button>
+            <p id="pgcount">3 pages</p>
+            <h1>Image</h1>
+            <input placeholder="Background image url." id="cfimg">
+            <h1>Text</h1>
+            <textarea id="cftext"></textarea>
+            <row><button id="saveinfocard4">Save</button><button id="cancelsave">cancel</button></row>
+
+        </div>
+
+    </div>
+
+    
+
+    <div id="write">
+       <div id="o2"><p id="o1">Compose</p> Word <input required id="word"> Link <input required id="wordlink">
+        <button id="linkmap" style="background-color:darkturquoise;color:black;width:40px;"><i class="fa-regular fa-circle-check"></i></button>
+    </div>
+
+    <textarea id="textbox">
+    </textarea>
+   <row> <button id="savecurrent">Save</button><button id="closetextbox">Cancel</button></row></div>
+
+
+    <button id="save"
+        style="max-width: 400px;background-color: rgb(8, 107, 206);color:white;margin-top: 20px;align-self:flex-end ;font-size: 20px;">Save
+        article</button>
+    <button id="savefl"
+        style="max-width: 400px;background-color: rgb(8, 107, 206);color:white;margin-top: 20px;align-self:flex-end ;font-size: 20px;">Save
+        infocard</button>
+
+
+
+
+</body>
+
+</html>
+<script type="module" src="upload.js"></script>

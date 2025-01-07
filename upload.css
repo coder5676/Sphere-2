@@ -1,0 +1,629 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: google sans text, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
+#uploadform h1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 50px;
+  width: fit-content;
+  border-radius: 30px;
+
+}
+
+#joinform input {
+  width: 70%;
+  height: 70px;
+  font-size: 25px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(248, 165, 165);
+
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding-inline: 10px;
+}
+
+#chname {
+  background-color: transparent;
+  color: black;
+  font-family: lexend, Arial, Helvetica, sans-serif;
+}
+
+#uploadform label {
+  margin-left: 20px;
+}
+
+#domainselector {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  border: 0px;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  background-color: transparent;
+  outline: none;
+}
+
+#domainselector option {
+  background-color: white;
+  color: black;
+}
+
+#mainarticle {
+  width: 90%;
+  height: 200px;
+  border: 1px solid grey;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+#uploadform button {
+  padding: 15px;
+  font-size: 30px;
+  margin-left: 20px;
+  border-radius: 15px;
+  color: rgb(76, 74, 81);
+  border: 0px;
+  background-color: transparent;
+}
+
+#maincontent {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+
+
+#uploadcnt {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#uploaded {
+
+  padding: 30px;
+  font-size: 40px;
+  border-radius: 80px;
+  width: 60px;
+  color: white;
+  background-color: rgb(81, 62, 255);
+  animation: done 3s infinite;
+
+}
+
+#uploadcnt button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  color: white;
+}
+
+@keyframes done {
+  50% {
+    box-shadow: 0px 0px 30px 0px blue;
+  }
+}
+
+#navbar {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  top: 0;
+  left: 0;
+  height: 65px;
+  z-index: 4;
+}
+
+#thumbnail {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 97%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 10px 0px rgb(220, 220, 220);
+  margin-bottom: 60px;
+
+}
+
+#sideimg {
+  background-image: url("https://th.bing.com/th/id/OIP.MQiYqLz00JS1Quhk64htigHaGc?w=709&h=617&rs=1&pid=ImgDetMain");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#thumbnail div {
+  width: 95%;
+  max-width: 400px;
+  height: 400px;
+  margin-top: 20px;
+
+}
+
+#thumbnail input {
+  width: 92%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid grey;
+  outline: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-inline: 20px;
+
+
+}
+
+.line {
+  width: 95%;
+  height: 2px;
+  background-color: rgb(100, 100, 100);
+}
+
+#notepad {
+  width: 97%;
+  background-color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgb(220, 220, 220);
+}
+
+#notepad button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  border: 1px solid rgb(0, 183, 255);
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+
+#notepad button:hover {
+  background-color: rgb(235, 239, 248);
+}
+
+#notepad h1 {
+  border: 0px;
+}
+
+#nav3 {
+  border-radius: 20px;
+  min-height: 50px;
+  width: 100%;
+}
+
+#joinform {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 20px;
+  height: 100%;
+  display: none;
+}
+
+#joinform img {
+  width: 300px;
+}
+
+#joinform div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#joinform button {
+  padding: 15px;
+  font-size: 20px;
+  margin: 20px;
+  background-color: rgb(14, 11, 168);
+  border: 0;
+  color: white;
+  border-radius: 30px;
+
+}
+
+#joinform input {
+  width: 290px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  margin: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-inline: 10px;
+}
+
+#userinfobar {
+  width: 97%;
+  max-width: 400px;
+  border-radius: 30px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding-bottom: 20px;
+
+}
+
+#imageuser3 {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#usid {
+  width: 400px;
+  background-color: transparent;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#usid input {
+  height: 50px;
+  border: none;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#usid p {
+  font-size: 15px;
+}
+
+
+
+#top-hero {
+  width: 100%;
+  height: 200px;
+  background-image: url("https://img.freepik.com/premium-vector/school-seamless-pattern-blue-vector-doodle-stationery-background-education-supplies-texture-hand-drawn-illustration_193606-388.jpg?w=360");
+  background-size: 200px;
+  position: absolute;
+  top: 65px;
+  z-index: -1;
+
+}
+
+#flashcardpad {
+  width: 97%;
+  height: 780px;
+  background-color: white;
+  border: 3px solid rgb(233, 233, 233);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  display: none;
+
+}
+#ijk{
+  width:100%;
+  height:50px;
+  display:flex;
+  align-self: center;
+  justify-content: space-between;
+}#ijk button{
+  background-color: #2d2d2d;
+  width:50px;
+  height:50px;
+  border-radius: 40px;
+  display:flex;
+  align-items: center;
+  color:white;
+  margin-left: 0px;
+  margin-top: 60px;
+
+}
+#demo2 {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}#demo2 h1{
+  color:rgb(232, 232, 232);
+  font-size: 20px;
+  margin:20px;
+
+  
+}
+#cardpart{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}#cardpart textarea{
+  width:400px;
+  height:200px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding:10px;
+  resize: none;
+  font-family: lexend,Arial, Helvetica, sans-serif;
+}
+#cardpart button{
+font-size: 20px;
+background-color: #6f00ff;
+color:white;
+margin-top: 30px;
+border-radius: 40px;
+}
+#flashcardpad input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 16px;
+  padding-inline: 10px;
+
+}
+#flimg{
+  width:97%;
+  height:240px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#er {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#er button {
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#write {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  background-color: rgb(210, 241, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 4;
+  right: 20px;
+  bottom: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+}
+
+#write button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(0, 103, 206);
+  border-radius: 30px;
+  width: 100px;
+  color: white;
+  margin-top: 10px;
+
+}
+
+#textbox {
+  width: 480px;
+  padding: 10px;
+  min-height: 450px;
+  border: 1px solid rgb(0, 143, 210);
+  font-family: lexend, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  resize: none;
+
+}
+#o2{
+  display:flex;
+  width:480px;
+  align-items: center;
+
+}#o1{
+  font-size: 15px;
+  background-color: #000000;
+  padding:10px;
+  border-radius: 40px;
+  color:white;
+  margin-right: 30px;
+}#o2 input{
+  width:80px;
+  height:40px;
+  border:1px solid grey;
+  outline: none;
+  border-radius:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 17px;
+  padding-inline:8px;
+}#o2 i{
+  margin-right:10px;
+
+}
+
+#buttonsaf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+
+#preview {
+  font-family: google sans text,Arial, Helvetica, sans-serif;
+  padding: 20px;
+  width: 97%;
+  max-width: 850px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: 500px;
+
+}
+
+/* Headings */
+#preview h1 {
+  font-size: 50px;
+  margin-bottom: 0.5em;
+  color: #2d2d2d;
+  text-align: left;
+  font-weight: 900;
+}
+
+#preview h2 {
+  font-size:35px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #141414;
+  text-align: left;
+  font-weight: 300;
+
+}
+
+/* Paragraph Text */
+#preview p {
+  font-size: 20px;
+  color: #535252;
+  line-height: 1.6;
+  margin-bottom:20px;
+}
+
+/* Links */
+#preview a {
+  color: #0057af;
+  text-decoration: none;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 1px dotted #0066cc;
+}
+
+#preview a:hover {
+  color: #004499;
+  border-bottom: 1px solid #004499;
+}
+
+/* Code Blocks */
+#preview pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+#preview code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#preview .highlight {
+  color: #0080db;
+  /* Tomato color for the highlighted span */
+}#preview img{
+  width:97%;
+  max-width:850px ;
+}#undofl{
+  width:200px;
+
+}#savefl{
+  display:none;
+}#waiting{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left:0;
+  gap:10px;
+  z-index: 25;
+  background-color: rgb(213, 247, 255);
+  display: none;
+}#w1{
+  width:20px;
+  height:20px;
+  border-radius: 20px;
+  background-color:rgb(0, 0, 0);
+  animation:jump 1s infinite;
+}#w2{
+ width:20px;
+  height:20px;
+  border-radius: 20px;
+  background-color:rgb(0, 0, 0);
+
+  animation:jump 1.5s infinite;
+
+}#w3{
+  width:20px;
+  height:20px;
+  border-radius: 20px;
+  background-color:rgb(0, 0, 0);
+
+  animation:jump 2s infinite;
+
+}#w4{
+  width:20px;
+  height:20px;
+  border-radius: 20px;
+  background-color:rgb(0, 0, 0);
+
+  animation:jump 2.5s infinite;
+
+}@keyframes jump{
+  50%{margin-bottom: 60px;}
+}

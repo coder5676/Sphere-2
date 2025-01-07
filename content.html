@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="auth.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Google Sans Text' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+
+    <script src="https://kit.fontawesome.com/954e575aaa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="waiting">
+        <p id="w1"></p>
+        <p id="w2"></p>
+        <p id="w3"></p>
+        <p id="w4"></p>
+    </div>
+    <div id="myfollowers" class="myfollowers">
+        <button id="closefollowers"><i class="fa-solid fa-xmark"></i></button>
+        <h1 id="fh"><i class="fa-solid fa-palette"></i> Creators</h1>
+        <div id="creatorsbar">
+
+    
+
+
+        </div>
+    </div>
+    
+    <!--- form for login and signup -->
+    <div id="form" class="background" style="margin-left: 50px;">
+        <button id="cross" style="align-self: flex-start;background-color: transparent;"><i
+            class="fa-solid fa-arrow-left"></i></button>
+    
+        <div id="loginform">
+          <h1><i class="fa-solid fa-right-to-bracket"></i> Login</h1>
+          <input id="username2" type="text" placeholder="email">
+          <input type="password" id="password2" placeholder="password">
+    
+          <button id="submit1" style="margin-bottom: -10px;">submit</button>
+          <button style="cursor: pointer;margin-top: 40px;background-color: transparent;color:dodgerblue"
+            id="signup">Create account</button>
+        </div>
+        <div id="signupform">
+          <h1><i class="fa-solid fa-paw"></i> Register</h1>
+          <input id="username1" type="text" placeholder="email">
+    
+          <input id="password1" type="password" placeholder="password">
+    
+          <input id="passwordconf1" type="password" placeholder="Confirm password">
+          <button id="submit2" >submit</button>
+          <button style="cursor: pointer;background-color: transparent;position: absolute;top:67%;color:dodgerblue"
+            id="login">Back to login.</button>
+    
+        </div>
+        <p id="errormsg"></p>
+      </div>
+    
+
+    <!--main content-->
+    <div id="topshow" class="topshow">
+        <div>
+            <button id="togglebut2" style="margin-left: 15px;color:black;font-size: 22px;margin-top: 5px;">
+                <i class="fa-solid fa-list"></i></button>
+            <h1 id="logo" style="font-size: 23px;margin-left:-10px;"> Sphere</h1>
+        </div>
+        
+        
+
+
+        <div id="hj"><p style="background-color:dodgerblue;padding:14px;border-radius:30px;cursor: pointer;margin-right: 20px;color:white;font-size: 20px;width:100px;text-align: center;" id="moreint">About</p>
+            <button id="userf" style="font-size: 30px;"><i class="fa-regular fa-circle-user"></i></button>
+            <button id="userbar" style="color:rgb(1, 66, 188);background-color:rgb(205, 241, 255);">A</button>
+        </div>
+    </div>
+
+        <!---left selection field-->
+     <div id="styletop" class="styletop">
+
+            <a href="index.html"><button style="margin-top: 70px;" ><i class="fa-regular fa-chess-rook" ></i> Home</button></a>
+            <button id="fetchmy"><i class="fa-regular fa-envelope-open"></i> Creators</button>
+            <a class="anchor"> <button class="uplbut" id="gi"><i class="fa-regular fa-pen-to-square"></i> Create</button></a>
+            <button id="followings"><i class="fa-regular fa-star"></i> My channel</button>
+            <button id="openrr"><i class="fa-regular fa-share-from-square"></i>Logout</button>
+            <hr>
+            <button> <i class="fa-regular fa-compass" style="color:dodgerblue"></i> <span style="background-color: rgb(239, 239, 239);padding:10px;border-radius: 30px;width:200px;text-align: center;">More topics</span></button>
+            <div id="interestsarea" class="interestsarea" >
+                <button id="all">All
+                </button><button id="pr">Programming</button>
+                <button id="ino">Innovation</button>
+                <button id="sc">Science</button>
+                <button id="gn">Nature</button>
+                <button id="sp">Space</button>
+                <button id="more">Stories</button>
+            </div>
+        </div>
+        
+        <div id="centerbar" class="centerbar">
+            <div id="famous">
+                
+            </div>
+
+<h1 id="yy">Articles and blogs</h1>
+            <div id="elements2">
+               <!---must contain card elements-->
+            </div>
+            <button id="moreitems">More <i class="fa-solid fa-arrow-right"></i></button>
+            <div id="ad"><div id="adimg"></div><i class="fa-solid fa-palette"></i> <h1>"Join Our Sphere Creator Community " </h1> <a class="anchor"><button class="uplbut">Create</button></a></div>
+
+        </div>
+
+ 
+        <div id="rightbar" class="rightbar">
+            <button id="closergb" style="background-color: white;width:50px;color:black;height:50px;position: absolute;align-self: flex-start;top:10px;margin-left: 20px;"><i class="fa-solid fa-xmark"></i></button>
+           <div id="ccc"> <h1>Your account</h1>
+            <div id="userinfo2" class="userinfo2">
+                <label>Email id: </label>
+                <p id="username">No user</p>
+                <label>Sphere id: </label>
+                <p id=userid>No user id</p>
+                <button id="logout" class="logout">Log-out</button>
+            </div></div>
+        </div>
+
+
+        
+
+</body>
+
+</html>
+
+<script>
+   
+   document.getElementById("userbar").addEventListener("click", () => {
+        document.getElementById("rightbar").classList.toggle("openrightbar");
+    })
+</script>
+
+<script src="content.js" type="module">
+</script>
+<script src="auth.js" type="module">
+</script>
