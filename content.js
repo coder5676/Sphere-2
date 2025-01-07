@@ -29,7 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
+window.slice=async function(str){
+  if(str.length<80){
+    return str;
+  }
+  return String(str).slice(0,80)+" ....";
+}
 async function getArticles(Domain) {
   var maxlikes = -1;
   var topArticle = null;
@@ -62,7 +67,7 @@ async function getArticles(Domain) {
                   <p1><i class="fa-regular fa-face-smile"></i> | ${countlikes(data.likes.length)}</p1>
                   <p2><i class="fa-regular fa-clock"></i> ${timepassed}</p2>
                 </div>
-                <h1>${data.heading}</h1>
+                <h1>${String(data.heading).slice(0,80)+" ..."}</h1>
               </div>
               <div style="background-image: url(${data.imageurl});" id="crdimg">
                 <div id="creinfo">
@@ -79,7 +84,7 @@ async function getArticles(Domain) {
                   <p>${data.user}</p>
                   <h2><i class="fa-regular fa-paste"></i></h2>
                 </div>
-                <h1 id="mainh1">${data.textarr[0]}</h1>
+                <h1 id="mainh1">${String(data.textarr[0]).slice(0,80)+" ..."}</h1>
               </div>
               <div id="infoimg2" style="background-image:url(${data.imagearr[0]});"></div>
             </div>`;
@@ -96,7 +101,7 @@ async function getArticles(Domain) {
         </div>
         <div id="textfm">
           <p>${topArticle.data().user}</p>
-          <h1>${topArticle.data().heading}</h1>
+          <h1>${String(topArticle.data().heading).slice(0,80)+" ..."}</h1>
           <button onclick="openview('${topArticle.id}')" id="nj">Read article</button>
         </div>`;
       document.querySelector("#famous").innerHTML = strf;
@@ -116,7 +121,7 @@ window.openview = async function (id) {
 
 // Assuming you have a Firestore timestamp
 function gettimepassed(timestamp) {
- const firestoreTimestamp = timestamp; // Firestore.Timestamp object
+  const firestoreTimestamp = timestamp; // Firestore.Timestamp object
   const savedDate = firestoreTimestamp.toDate(); // Convert to JavaScript Date object
   const currentDate = new Date();
   console.log(savedDate);
@@ -147,8 +152,6 @@ function gettimepassed(timestamp) {
    
   }
 
-
-  return timePassed;
 
   return timePassed;
 
