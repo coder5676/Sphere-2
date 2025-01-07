@@ -626,4 +626,10 @@ border-radius: 40px;
 
 }@keyframes jump{
   50%{margin-bottom: 60px;}
+}@media(max-width:700px){
+  #thumbnail{
+   visibility: hidden;
+  }#notepad{
+    visibility: hidden;
+  }
 }
