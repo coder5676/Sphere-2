@@ -116,7 +116,7 @@ window.openview = async function (id) {
 
 // Assuming you have a Firestore timestamp
 function gettimepassed(timestamp) {
-  const firestoreTimestamp = timestamp; // Firestore.Timestamp object
+ const firestoreTimestamp = timestamp; // Firestore.Timestamp object
   const savedDate = firestoreTimestamp.toDate(); // Convert to JavaScript Date object
   const currentDate = new Date();
   console.log(savedDate);
@@ -125,6 +125,9 @@ function gettimepassed(timestamp) {
   const differenceInMinutes = Math.floor(differenceInSeconds / 60);
   const differenceInHours = Math.floor(differenceInMinutes / 60);
   const differenceInDays = Math.floor(differenceInHours / 24);
+  const differenceInMonth=Math.floor(differenceInDays/30);
+  const differenceInYear=Math.floor(differenceInMonth/12);
+
 
   let timePassed;
   if (differenceInSeconds < 60) {
@@ -133,9 +136,19 @@ function gettimepassed(timestamp) {
     timePassed = `${differenceInMinutes} minutes ago`;
   } else if (differenceInHours < 24) {
     timePassed = `${differenceInHours} hours ago`;
-  } else {
+  } else if(differenceInDays<30) {
     timePassed = `${differenceInDays} days ago`;
   }
+  else if(differenceInMonth<12) {
+    timePassed = `${differenceInMonth} months ago`;
+  }
+  else{
+    timePassed = `${differenceInYear} years ago`;
+   
+  }
+
+
+  return timePassed;
 
   return timePassed;
 
