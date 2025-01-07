@@ -67,7 +67,7 @@ async function getArticles(Domain) {
                   <p1><i class="fa-regular fa-face-smile"></i> | ${countlikes(data.likes.length)}</p1>
                   <p2><i class="fa-regular fa-clock"></i> ${timepassed}</p2>
                 </div>
-                <h1>${String(data.heading).slice(0,80)+" ..."}</h1>
+                <h1>${data.heading}</h1>
               </div>
               <div style="background-image: url(${data.imageurl});" id="crdimg">
                 <div id="creinfo">
@@ -101,7 +101,7 @@ async function getArticles(Domain) {
         </div>
         <div id="textfm">
           <p>${topArticle.data().user}</p>
-          <h1>${String(topArticle.data().heading).slice(0,80)+" ..."}</h1>
+          <h1>${topArticle.data().heading}</h1>
           <button onclick="openview('${topArticle.id}')" id="nj">Read article</button>
         </div>`;
       document.querySelector("#famous").innerHTML = strf;
