@@ -634,5 +634,9 @@ border-radius: 40px;
   }
   #flashcardpad{
     visibility: hidden;
+  }#save{
+    display:none;
+  }#savef1{
+    display:none;
   }
 }
