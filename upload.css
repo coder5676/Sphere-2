@@ -632,4 +632,7 @@ border-radius: 40px;
   }#notepad{
     visibility: hidden;
   }
+  #flashcardpad{
+    visibility: hidden;
+  }
 }
