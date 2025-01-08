@@ -505,6 +505,7 @@ text-align: left;
     position: fixed;
     width: 100%;
     height: 100vh;
+    background-color:cornflowerblue;
     background-image: url("https://img.freepik.com/free-vector/flat-design-abstract-geometric-background_23-2149111908.jpg");
     background-size: cover;
     background-position: center;
