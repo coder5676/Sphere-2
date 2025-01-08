@@ -505,9 +505,12 @@ text-align: left;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
-    top: 60px;
-    z-index: 4;
+    background-image: url("https://img.freepik.com/free-vector/flat-design-abstract-geometric-background_23-2149111908.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0px;
+    z-index: 20;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -518,30 +521,32 @@ text-align: left;
 
 #closefollowers {
     align-self: flex-start;
-    color: rgb(31, 31, 31);
-    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
     margin-left: 20px;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 25px;
     border: 0px;
+    background-color: black;
+    padding:10px;
+    border-radius: 60px;
+    width:50px;
+
 }
 
 .openmyfollowers {
     display: flex;
 }
 #fh{
-    background-color: white;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     align-self: flex-start;
     margin-left: 20px;
     padding:10px;
     border-radius: 40px;
     font-size: 25px;
-    font-weight: 400;
 
 }#fh i{
-    background-color: #c6e4ff;
-    color:rgb(36, 0, 128);
+    color:rgba(255, 255, 255, 0.719);
     font-size: 30px;
     padding:10px;
     border-radius: 30px;
@@ -688,34 +693,36 @@ padding-bottom: 10px;
 #creatorsbar {
     width: 100%;
     background-color: #ffffff;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    border-radius: 30px;
     padding-bottom: 50px;
     padding-top: 30px;
 }
 #creator {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 50px;
+    width: 100%;
+    max-width: 400px;
+   border:1px solid rgb(186, 186, 186);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 0px rgb(205, 205, 205);
-    margin-bottom:30px;
+    margin-bottom:50px;
 }
 
 #creator h1 {
     margin-top: 30px;
     font-size: 30px;
+    color: dodgerblue;
+    padding:10px;
+    border-radius: 50px;
 }
 #crimg {
     width: 100px;
@@ -726,6 +733,7 @@ padding-bottom: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 20px;
+    border: 1px solid dodgerblue;
 }
 
 #crname {
@@ -749,7 +757,7 @@ padding-bottom: 10px;
     font-size: 20px;
     border-radius: 30px;
     color:white;
-    box-shadow: 0px 0px 10px 0px rgb(214, 214, 214);
+   border: 1px solid rgb(44, 44, 44);
 }
 .lightm {
     background-color: #ffffff;
@@ -825,29 +833,27 @@ display:flex;
     border-radius: 20px;
 }#ad{
     width:97%;
-    background-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     display:flex;
     align-items: center;
     justify-content: space-around;
-background-color:rgb(236, 236, 236);
     margin-bottom: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid rgb(189, 189, 189);
+    background:linear-gradient(130deg,rgb(143, 210, 255),rgb(39, 255, 208));
 }#ad i{
     padding:20px;
     font-size: 50px;
     border-radius: 60px;
-    color:#ffffff;
-    background-color: black;
+    color:#ffffffad;
 }#ad h1{
     font-size:30px;
     padding:10px;
     border-radius: 20px;
     font-family: lexend,Arial, Helvetica, sans-serif;
-   color:rgb(0, 0, 0);
+   color:rgb(255, 255, 255);
    font-weight: 400;
+   text-align: center;
  
 }#ad button{
     background-color:#000000;
@@ -883,12 +889,13 @@ height:60px;
     width:95%;
     margin-left: 20px;
     margin-top: 70px;
-    background-color:#f4f4f4;
+    background-color:#f5f5f5;
     border-radius: 50px;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-bottom: 30px;
 
 
 }
@@ -987,4 +994,8 @@ margin-right: 20px;
 
 }@keyframes jump{
     50%{margin-bottom: 60px;}
+}
+#rt{
+    font-size: 60px;
+    margin-top: 60px;
 }
