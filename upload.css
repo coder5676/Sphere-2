@@ -327,9 +327,7 @@ body {
   position: absolute;
   top: 65px;
   z-index: -1;
-
 }
-
 #flashcardpad {
   width: 97%;
   height: 780px;
@@ -341,6 +339,7 @@ body {
   justify-content: space-around;
   gap: 20px;
   display: none;
+  margin-top: 20px;
 
 }
 #ijk{
@@ -350,27 +349,28 @@ body {
   align-self: center;
   justify-content: space-between;
 }#ijk button{
-  background-color: #2d2d2d;
+  background-color: #e8e8e8;
   width:50px;
   height:50px;
   border-radius: 40px;
   display:flex;
   align-items: center;
-  color:white;
+  color:rgb(0, 0, 0);
   margin-left: 0px;
-  margin-top: 60px;
+  margin-top: 130px;
 
 }
 #demo2 {
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 500px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  border:1px solid rgb(159, 159, 159);
 }#demo2 h1{
-  color:rgb(232, 232, 232);
+  color:rgb(0, 0, 0);
   font-size: 20px;
   margin:20px;
 
@@ -392,24 +392,24 @@ body {
 }
 #cardpart button{
 font-size: 20px;
-background-color: #6f00ff;
+background-color:dodgerblue;
 color:white;
-margin-top: 30px;
-border-radius: 40px;
+margin-top: 20px;
+border-radius: 10px;
 }
 #flashcardpad input {
   width: 400px;
   height: 50px;
   border-radius: 10px;
   align-self: center;
-  font-size: 16px;
+  font-size: 17px;
   padding-inline: 10px;
 
 }
 #flimg{
   width:97%;
   height:240px;
-  background-color: white;
+  background-color: rgb(227, 227, 227);
   margin-top: 10px;
   border-radius: 10px;
   background-position: center;
