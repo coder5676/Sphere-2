@@ -96,6 +96,7 @@ async function getArticles(Domain) {
 
     if (topArticle) {
       const strf = `
+
         <div id="imgfm" style="background-image:url(${topArticle.data().imageurl});">
           <p id="fd"><i class="fa-regular fa-face-laugh-beam"></i> . Getting famous</p>
         </div>
@@ -104,7 +105,7 @@ async function getArticles(Domain) {
           <h1>${topArticle.data().heading}</h1>
           <button onclick="openview('${topArticle.id}')" id="nj">Read article</button>
         </div>`;
-      document.querySelector("#famous").innerHTML = strf;
+      document.querySelector("#famous").innerHTML +=strf;
     }
 
     document.getElementById("waiting").style.display = "none";
@@ -182,7 +183,7 @@ button3.addEventListener('click', () => {
   getArticles("general");
 });
 button4.addEventListener('click', () => {
-  getArticles("stories");
+  getArticles("news");
 });
 button5.addEventListener('click', () => {
   getArticles("all");
@@ -244,6 +245,11 @@ function userlogined(name, id) {
   document.getElementById("fetchmy").style.display = "flex";
   document.getElementById("gi").style.display = "flex";
   document.getElementById("followings").style.display = "flex";
+  var elements = document.getElementsByClassName("logout");
+ // Loop through the elements and set the property 
+  for (var i = 0; i < elements.length; i++) { 
+    elements[i].style.display="block"; 
+}
 }
 function usersignedout() {
   document.getElementById("userf").style.display = "block";
@@ -251,7 +257,6 @@ function usersignedout() {
   anchor.forEach(tag => { tag.href = "" });
   document.getElementById("form").style.display = "flex";
   document.getElementById("userf").style.color = "grey";
-  document.getElementById("elements").innerHTML = "";
   document.getElementById("openrr").style.display = "none";
   document.getElementById("fetchmy").style.display = "none";
   document.getElementById("gi").style.display = "none";
