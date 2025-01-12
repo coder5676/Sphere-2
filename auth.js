@@ -82,7 +82,12 @@ function signout(){
 }
 document.getElementById("logout").addEventListener("click",()=>{
     signout();
-    document.getElementById("logout").style.display="none";
+    
+var elements = document.getElementsByClassName("logout");
+ // Loop through the elements and set the property 
+  for (var i = 0; i < elements.length; i++) { 
+    elements[i].style.display="none"; 
+}
 });
 function errorm(msg){
     document.getElementById("errormsg").innerHTML=msg;
