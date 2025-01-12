@@ -17,7 +17,7 @@ body{
     align-items: center;
     z-index: 7;
    justify-content: space-between;
-   box-shadow: 0px 0px 10px 0px rgb(226, 226, 226);
+   box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
 }#topshow div{
     display:flex;
    align-items: center;
@@ -28,7 +28,9 @@ body{
     font-size: 25px;
     color:rgb(105, 105, 105);
     background-color: transparent;
-}#userbar{
+
+}
+#userbar{
     width:45px;
     height:45px;
     border-radius: 50px;
@@ -73,7 +75,7 @@ button {
     overflow-y:scroll;
     overflow-x: hidden;
     scrollbar-width: none;
-    box-shadow: 0px 0px 10px 0px rgb(229, 229, 229);
+    box-shadow: 0px 0px 0px 0px rgb(229, 229, 229);
     
 }.openstyletop{
     visibility: visible;
@@ -95,6 +97,8 @@ button {
     align-items: center;
     font-size: 17px;
     margin-right: 20px;
+}.styletop:hover{
+    width:300px;
 }
 #styletop i {
    
@@ -147,7 +151,7 @@ button {
    background-color: rgb(255, 255, 255);
 }
 #yy{
-    color:rgb(22, 138, 255);
+    color:rgb(89, 89, 89);
     border:1px solid rgb(47, 47, 47);
     margin-top: 100px;
     width:350px;
@@ -505,7 +509,6 @@ text-align: left;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color:cornflowerblue;
     background-image: url("https://img.freepik.com/free-vector/flat-design-abstract-geometric-background_23-2149111908.jpg");
     background-size: cover;
     background-position: center;
@@ -556,8 +559,6 @@ text-align: left;
     color:dodgerblue;
 }
 @media(max-width:700px) {
-   
-
     .centerbar {
         width: 100%;
         margin-left: -5px;
@@ -576,8 +577,9 @@ text-align: left;
         font-size: 20px;
 
     }
+
 #yy{
-    margin-top: 600px;
+    margin-top: 540px;
     font-size: 20px;
     max-width: 200px;
 }
@@ -656,13 +658,19 @@ padding-bottom: 10px;
         top:70px;
         max-height: 200px;
     }#textfm{
+        margin-right: -40px;
         position: absolute;
-        font-size: 12px;
-        margin-right:10px;
-        top:80px;
-        max-height: 350px;
+        top:90px;
+        max-height: 300px;
+        box-shadow: 0px 0px 0px 0px rgb(208, 208, 208);
 
-    }#famous{
+    }#textfm h1{
+        font-size: 22px;
+        
+    }#textfm button{
+        margin-bottom: 20px;
+    }
+    #famous{
      max-width: 0px;
     }
     #styletop{
@@ -815,7 +823,7 @@ display:flex;
     align-items: center;
     font-size: 17px;
     border:0px;
-    color:black;
+    color:rgb(55, 55, 55);
   font-family: lexend,Arial, Helvetica, sans-serif;
   padding:10px;
     margin-left: 50px;
@@ -890,10 +898,9 @@ height:60px;
     width:95%;
     margin-left: 20px;
     margin-top: 70px;
-    background-color:#f5f5f5;
     border-radius: 50px;
-    display:flex;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
@@ -902,7 +909,6 @@ height:60px;
 }
 #imgfm{
     width:95%;
-    max-width: 800px;
     height:450px;
     background-color: #1b1b1b;
     border-radius: 30px;
@@ -912,19 +918,25 @@ height:60px;
     display:flex;
     margin-right: 20px;
 }#textfm{
+    position: absolute;
     width:95%;
-    max-width: 400px;
+    right:50px;
+    max-width: 420px;
     height:400px;
     margin-top: 200px;
-    background-color: white;
     border-radius: 30px;
     font-family: questrial,Arial, Helvetica, sans-serif;
-    box-shadow: 0px 0px 10px 0px rgb(190, 190, 190);
     display:flex;
     flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgb(208, 208, 208);
 }#textfm p{
     font-size: 25px;
-    color:dodgerblue;
+    color:rgb(78, 78, 78);
+    border: 1px solid grey;
+    padding:10px;
+    border-radius: 40px;
+    width:fit-content;
     margin-left: 20px;
 
 }#textfm h1{
@@ -935,11 +947,10 @@ height:60px;
     padding:15px;
     font-size: 20px;
     border-radius: 60px;
-   background-color:rgb(0, 0, 0);
 align-self: flex-end;
 margin-right: 20px;
     width: 200px;
-    color:white;
+    color:rgb(0, 0, 0);
     border:0px;
 
 }#tgh{
@@ -999,4 +1010,11 @@ margin-right: 20px;
 #rt{
     font-size: 60px;
     margin-top: 60px;
+}#ty{
+    background-color: #7300ff;
+    color:white;
+    font-size: 16px;
+    padding:15px;
+    width:150px;
+    text-align: center;
 }
