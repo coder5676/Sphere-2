@@ -12,6 +12,7 @@ const firebaseConfig = {
 document.addEventListener("DOMContentLoaded",()=>{
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
+
   // Function to fetch article by Id
     fetchcrdetails(id);
 });
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
       userid = user.uid;
-      console.log("user is signed in",user)
+      console.log("user is signed in",user);
       userlogined(user.providerData[0].uid, user.uid);
     } else {
       console.log("user is signed out")
@@ -42,7 +43,6 @@ document.getElementById("goback").addEventListener("click",()=>{
 
 const fetchcrdetails = async (id) => {
     try {
-      console.log(id)
         const docRef = doc(db, "creators", id);
         const docSnap = await getDoc(docRef);
 
