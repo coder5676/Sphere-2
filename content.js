@@ -218,19 +218,15 @@ document.getElementById("cross").addEventListener('click', () => {
   document.getElementById("form").style.display = "none";
 
 });
-
-
-
 document.getElementById("logout").addEventListener("click", () => {
   document.getElementById("rightbar").classList.remove("openrightbar");
-})
+});
 getArticles("all");
 const anchor = document.querySelectorAll(".anchor");
 function userlogined(name, id) {
   document.getElementById("userf").style.display = "none";
   document.getElementById("userbar").style.display = "block";
   document.getElementById("userbar").innerHTML = String(name).slice(0, 1).toUpperCase();
-
 
   anchor.forEach(tag => {
     tag.href = "upload.html";
@@ -305,8 +301,8 @@ async function getcreators() {
       }
 
       str3 += `
-        <div id="creator" >
-          <div id="crimg" style="background-image:url(${doc.data().profilepic})" onclick="creatorinfo('${doc.data().creatoremail}')"></div>
+        <div id="creator">
+          <div id="crimg" style="background-image:url(${doc.data().profilepic})" onclick="creatorinfo('${doc.id}')"></div>
           <h1 id="crname">${doc.data().creatorname}</h1>
           <p id="foll">${doc.data().followers.length} followers</p>
           <button id="followbut-${doc.id}" style="background-color:${bgcolor};color:${txtcolor}" onclick="addfollowings('${doc.id}',this)">${buttext}</button>
@@ -372,8 +368,9 @@ function notjoined() {
 function like(userem) {
 
 }*/
-window.creatorinfo = async function (usemail) {
-  try {
+window.creatorinfo = async function (crid) {
+  window.open(`creator.html?id=${crid}`, '_blank');
+  /*try {
     const creatorsRef = collection(db, "creators");
     const q = query(creatorsRef, where("creatoremail", "==", usemail));
     // Execute the query 
@@ -382,7 +379,7 @@ window.creatorinfo = async function (usemail) {
       querySnapshot.forEach((doc) => {
         // Assuming you expect only one document 
         const crid = doc.id;
-        window.open(`creator.html?id=${crid}`, '_blank');
+       
       })
     }
     else {
@@ -391,7 +388,7 @@ window.creatorinfo = async function (usemail) {
   }
   catch (error) {
     console.log(error);
-  }
+  }*/
 };
 document.getElementById("followings").addEventListener("click", () => {
   creatorinfo(useremail);
