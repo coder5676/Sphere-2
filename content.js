@@ -302,7 +302,7 @@ async function getcreators() {
 
       str3 += `
         <div id="creator">
-          <div id="crimg" style="background-image:url(${doc.data().profilepic})" onclick="creatorinfo('${doc.id}')"></div>
+          <div id="crimg" style="background-image:url(${doc.data().profilepic})" onclick="creatorinfo('${doc.data().creatoremail}')"></div>
           <h1 id="crname">${doc.data().creatorname}</h1>
           <p id="foll">${doc.data().followers.length} followers</p>
           <button id="followbut-${doc.id}" style="background-color:${bgcolor};color:${txtcolor}" onclick="addfollowings('${doc.id}',this)">${buttext}</button>
@@ -368,29 +368,34 @@ function notjoined() {
 function like(userem) {
 
 }*/
-window.creatorinfo = async function (crid) {
-  window.open(`creator.html?id=${crid}`, '_blank');
-  /*try {
+window.creatorinfo = async function (usemail) {
+
+  try {
+    
     const creatorsRef = collection(db, "creators");
     const q = query(creatorsRef, where("creatoremail", "==", usemail));
     // Execute the query 
+    let crid="";
     const querySnapshot = await getDocs(q);
     if (!querySnapshot.empty) {
       querySnapshot.forEach((doc) => {
         // Assuming you expect only one document 
-        const crid = doc.id;
-       
+          crid = doc.id;
+
       })
+      window.open(`creator.html?id=${crid}`, '_blank');
     }
     else {
       console.log("Not found");
     }
+   
   }
   catch (error) {
     console.log(error);
-  }*/
+  }
 };
 document.getElementById("followings").addEventListener("click", () => {
+
   creatorinfo(useremail);
 });
 document.getElementById("togglebut2").addEventListener("click", () => {
