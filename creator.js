@@ -34,16 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function userlogined(name, id) {
   userid=String(name).slice(0, 6)+"@"+String(id).slice(-4);
-}
+};
 
 document.getElementById("goback").addEventListener("click",()=>{
     window.close();
-})
+});
+
 const fetchcrdetails = async (id) => {
     try {
+      console.log(id)
         const docRef = doc(db, "creators", id);
         const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
+
+        if (docSnap.exists()){
             var bgcolor = "";
             var buttext = "";
             var txtcolor="";
@@ -56,7 +59,7 @@ const fetchcrdetails = async (id) => {
               buttext = "Follow";
               txtcolor="white";
             }
-            console.log("Article data:", docSnap.data());
+      
             document.getElementById("crimage").style.backgroundImage = `url(${docSnap.data().profilepic})`;
             document.getElementById("crname").innerHTML = docSnap.data().creatorname;
             document.getElementById("follcount").innerHTML = docSnap.data().followers.length+" followers";
@@ -67,10 +70,11 @@ const fetchcrdetails = async (id) => {
             document.getElementById("followbut").addEventListener("click",()=>{
                 addfollowings(docSnap.id);
             })
+            document.getElementById("waiting").style.display="none";
 
           }
           else{
-            document.getElementById("articles").innerHTML=`No articles yet +<button id="fgh">create</button>`;
+            document.getElementById("articles").innerHTML=`No articles yet`;
           }
           } catch (error) {
             console.error("Error fetching document:", error);
@@ -88,7 +92,9 @@ const fetcharticlesbyid = async (id) => {
     const querySnapshot = await getDocs(q);
     
     if (querySnapshot.empty) {
-      document.querySelector("#articles").innerHTML = `No articles yet | <a href="upload.html"><button id="fgh">Create</button></a>`;
+      document.querySelector("#infocards").innerHTML = `No data`;
+      document.querySelector("#articles").innerHTML = `No data`;
+
       document.getElementById("artcount").innerHTML = "0 articles";
       return;
     }
@@ -111,7 +117,7 @@ const fetcharticlesbyid = async (id) => {
                 <p1><i class="fa-regular fa-face-smile"></i> | ${data.likes.length}</p1>
                 <p2><i class="fa-regular fa-clock"></i> ${timepassed}</p2>
               </div>
-              <h1>${data.heading}</h1>
+              <h1>${String(data.heading).slice(0,80)+`...`}</h1>
             </div>
             <div style="background-image: url(${data.imageurl});" id="crdimg">
               <div id="creinfo">
@@ -128,21 +134,21 @@ const fetcharticlesbyid = async (id) => {
               <h2><i class="fa-regular fa-paste"></i></h2>
             </div>
             <div id="text2">
-              <h1 id="mainh1">${data.textarr[0]}</h1>
+              <h1 id="mainh1">${String(data.textarr[0]).slice(0,80)+`...`}</h1>
             </div>
             <div id="infoimg2" style="background-image:url(${data.imagearr[0]});"></div>
           </div>`;
       }
     });
-
-    document.querySelector("#articles").innerHTML = str4 || `No articles yet | <a href="upload.html"><button id="fgh">Create</button></a>`;
-    document.querySelector("#infocards").innerHTML = str5 || ' `No info cards yet | <a href="upload.html"><button id="fgh">Create</button></a>';
+    
+    document.querySelector("#articles").innerHTML = str4 || `No articles yet.`;
+    document.querySelector("#infocards").innerHTML = str5 || `No info cards yet.`;
     document.getElementById("artcount").innerHTML = i + " articles";
-
+    document.getElementById("waiting").style.display="none";
   } catch (error) {
     console.error("Error fetching document:", error);
   }
-  document.getElementById("waiting").style.display="none";
+ 
 };
 
 
