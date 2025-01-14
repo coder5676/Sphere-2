@@ -51,8 +51,7 @@ body {
     font-size: 20px;
 }
 #d1{
-    margin-right: 100px;
-    width:200px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -66,6 +65,7 @@ body {
     position: fixed;
     top: 0;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgb(196, 196, 196);
 }
 
 #topshow button {
@@ -81,7 +81,7 @@ body {
     display:flex;
     align-items: center;
     background-color: #ffffff;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 20px;
@@ -124,12 +124,22 @@ justify-content: center;
     background-position: center;
     background-size: cover;
     border-radius: 30px;
-
+margin-right: 15px;
+margin-left: 10px;
 }
 
 #timepast {
     font-weight: 400;
     font-size: 20px;
+    color:#535252;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: rgb(221, 246, 255);
+    padding:10px;
+    border-radius: 20px;
+
+
+
 }
 
 #likes {
@@ -140,7 +150,13 @@ justify-content: center;
     background-color: transparent;
     border:0px;
 
-}#likes i:hover{
+
+}#likes i{
+    padding:15px;
+    border-radius: 40px;
+   border :1px solid rgb(56, 56, 56);
+}
+#likes i:hover{
     color:orange;
     font-size: 30px;
 }
@@ -150,7 +166,7 @@ justify-content: center;
   margin-bottom: 0.5em;
   color: #000000;
   text-align: left;
-  font-weight: 700;
+  font-weight: 400;
  margin-bottom: 60px;
  margin-top: 40px;
 
@@ -275,16 +291,36 @@ justify-content: center;
     #showtop{
         display: none;
     }#s1 h3{
-        font-size: 12px;
+        font-size: 13px;
     }#s2 h3{
-        font-size: 12px;
+        font-size: 14px;
 
     }#likes{
         font-size: 16px;
     }#maincontainer h1{
-        font-size: 40px;
-    }#maincontainer h2{
         font-size: 35px;
+    }#maincontainer h2{
+        font-size: 30px;
+    }#timepast{
+        font-size: 15px;
+    }#crimg{
+        max-height:40px;
+        max-width: 40px;
+    }#logo{
+        font-size: 20px;
+        margin-left: 10px;
     }
+
+}#copyButton{
+    height:53px;
+}
+#copyButton p{
+    margin-left: 10px;
+    margin-right: 10px;
+}#copyButton i{
+    margin-left: 15px;
+
+}#copyButton p1{
+    margin-right: 15px;
 
 }
