@@ -55,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width:200px;
 }
 .topshow {
     width: 100%;
@@ -305,6 +306,8 @@ margin-left: 10px;
     }#logo{
         font-size: 20px;
         margin-left: 10px;
+    }#topshow button{
+        font-size: 19px;
     }
 
 }
