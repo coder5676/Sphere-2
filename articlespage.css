@@ -151,10 +151,6 @@ margin-left: 10px;
     border:0px;
 
 
-}#likes i{
-    padding:15px;
-    border-radius: 40px;
-   border :1px solid rgb(56, 56, 56);
 }
 #likes i:hover{
     color:orange;
@@ -310,17 +306,5 @@ margin-left: 10px;
         font-size: 20px;
         margin-left: 10px;
     }
-
-}#copyButton{
-    height:53px;
-}
-#copyButton p{
-    margin-left: 10px;
-    margin-right: 10px;
-}#copyButton i{
-    margin-left: 15px;
-
-}#copyButton p1{
-    margin-right: 15px;
 
 }
