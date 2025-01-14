@@ -45,10 +45,14 @@ const fetchArticleById = async (id) => {
         col = "black";
       }
       str = `
+     
        <div id="bloginfo">
-     <div id="s1" onclick="opencreator('${docSnap.data().crid}')"><div id="crimg" style="background-image:url(${docSnap.data().profilepic})"></div><h3 id="crname" style="font-size: 20px;">${docSnap.data().user}</h3><i class="fa-regular fa-share-from-square" style="margin-left:20px"></i></div>
-        <div id="s2"><h3 id="timepast" style="font-size: 20px;">${gettimepassed(docSnap.data().timestamp)}</h3><button id="likes" style="color:${col}" onclick="addlikes('${id}',this)"> <i class="fa-regular fa-face-smile"></i> |${countlikes(docSnap.data().likes.length)}</button></div></div>
-        <h1>${docSnap.data().heading}</h1>
+  
+     <div id="s1" onclick="opencreator('${docSnap.data().crid}')"><div id="crimg" style="background-image:url(${docSnap.data().profilepic})"></div><h3 id="crname">${docSnap.data().user}</h3><i class="fa-regular fa-share-from-square" style="margin-left:20px"></i></div>
+        <div id="s2"><button id="likes" style="color:${col}" onclick="addlikes('${id}',this)"> <i class="fa-regular fa-face-smile"></i> ${countlikes(docSnap.data().likes.length)}</button></div></div>
+        <h3 id="timepast" >Uploaded ${gettimepassed(docSnap.data().timestamp)} . ${docSnap.data().readtime} minutes read</h3>
+        <h1 id="mainhead">${docSnap.data().heading}</h1>
+         
       <img src="${docSnap.data().imageurl}" id="topimage2"> 
         <div id="container">${docSnap.data().content}</div>`
       document.querySelector("#maincontainer").innerHTML = str;
