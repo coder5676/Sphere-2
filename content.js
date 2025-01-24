@@ -101,7 +101,7 @@ async function getArticles(Domain) {
           <p id="fd"><i class="fa-regular fa-face-laugh-beam"></i> . Getting famous</p>
         </div>
         <div id="textfm">
-          <p>${topArticle.data().user}</p>
+        <p><span>Created by .</span> ${topArticle.data().user}</p>
           <h1>${topArticle.data().heading}</h1>
           <button onclick="openview('${topArticle.id}')" id="nj">Read article</button>
         </div>`;
@@ -415,3 +415,7 @@ function countlikes(likes) {
   return a;
 
 };
+
+document.getElementById("ty").addEventListener("click",()=>{
+  document.getElementById("interestsarea").classList.toggle("interestsareashow");
+})
