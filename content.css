@@ -16,7 +16,7 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    z-index: 7;
+    z-index: 20;
     justify-content: space-between;
     box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
 }
@@ -24,22 +24,26 @@ body {
 #topshow div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #topshow button {
-    margin-right: 20px;
     border: 0px;
     font-size: 25px;
     color: rgb(105, 105, 105);
     background-color: transparent;
 
 }
-
+#togglebut2{
+    font-size: 20px;
+    margin-right: 20px;
+}
 #userbar {
     width: 45px;
     height: 45px;
     border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 button {
@@ -79,10 +83,11 @@ button {
     color: #000000;
     transform: translate(0%, 0%);
     transition-duration: 0.1s;
-    background-color: #ffffff;
+    background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
+    font-weight: 400;
     box-shadow: 0px 0px 0px 0px rgb(229, 229, 229);
 
 }
@@ -99,9 +104,9 @@ button {
     color: #000000;
     text-align: left;
     height: 50px;
+    font-weight: 200;
     background-color: transparent;
     border-radius: 50px;
-    font-weight: 900;
     margin-bottom: 20px;
     font-family: Questrial, Arial, Helvetica, sans-serif;
     display: flex;
@@ -287,7 +292,8 @@ button {
     padding: 10px;
     color: #535353;
     border-radius: 20px;
-    border: 1px solid grey;
+    background-color: rgb(0, 170, 255);
+    color:white
 
 }
 
@@ -429,9 +435,9 @@ button {
     font-weight: 300;
     margin-left: 20px;
     padding: 10px;
-    color: #535353;
+   background-color: rgb(0, 0, 0);
+   color:rgb(255, 255, 255);
     border-radius: 20px;
-    border: 1px solid grey;
 }
 
 #fgh h2 {
@@ -639,6 +645,9 @@ button {
 }
 
 @media(max-width:700px) {
+    #userbar{
+        margin-right: 0px;
+    }
     .centerbar {
         width: 100%;
         margin-left: -5px;
@@ -768,12 +777,11 @@ button {
         top: 280px;
         left: 15px;
         max-height: 300px;
-        box-shadow: 0px 0px 2px 0px rgb(141, 141, 141);
 
     }
 
     #textfm h1 {
-        font-size: 22px;
+        font-size: 20px;
 
     }
 
@@ -787,10 +795,18 @@ button {
 
     #styletop {
         transform: translate(-67px, 0px);
+        min-width: 0px;
     }
-
+#styletop i{
+    display:none;
+}
     #styletop button {
+        margin-left: 70px;
+        width:180px;
         padding-left: 20px;
+        font-weight: 400;
+        background-color: rgb(232, 249, 255);
+        
     }
 
     .interestsarea button {
@@ -816,6 +832,8 @@ button {
         width: 96%;
         margin-bottom: 10px;
         max-height: 130px;
+    }.interestsarea{
+       padding-right:30px;
     }
 
 }
@@ -947,24 +965,42 @@ button {
 }
 
 .interestsarea {
-    width: 500px;
-    border-radius: 40px;
-}
+    position: fixed;
+    top:60px;z-index: 10;
+    width:100%;
+    min-height:200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    align-items: center;
+   justify-content: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ transform: translate(0%,-200%);
+ transition-duration: 0.5s;
 
-.interestareashow {
-    visibility: visible
+
+}.interestsarea:hover{
+    display:flex;
+}
+.interestsareashow {
+    transform: translate(0%,0%);
+ transition-duration: 0.5s;
+
 }
 
 #interestsarea button {
     border-radius: 50px;
-    display: flex;
-    align-items: center;
     font-size: 17px;
-    border: 0px;
-    color: rgb(55, 55, 55);
-    font-family: lexend, Arial, Helvetica, sans-serif;
+    font-family: questrial, Arial, Helvetica, sans-serif;
     padding: 10px;
-    margin-left: 50px;
+    background-color: transparent;
+    padding-right: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    display:flex;
+    align-items: center;
 
 
 }
@@ -972,15 +1008,16 @@ button {
 #interestsarea button:hover {
     background-color: #c6e4ff;
     color: #000000;
-    width: 150px;
 }
 
 #interestsarea i {
     margin-right: 20px;
-    background-color: #cde2ff;
-    color: rgb(0, 119, 255);
+    color: rgb(255, 187, 0);
     padding: 10px;
     border-radius: 20px;
+    align-self: flex-start;
+    font-size: 20px;
+    background-color: rgb(255, 251, 240);
 }
 
 #ad {
@@ -1087,15 +1124,18 @@ button {
 }
 
 #textfm p {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(78, 78, 78);
-    border: 1px solid grey;
     padding: 14px;
     max-height: 40px;
     border-radius: 40px;
     width: fit-content;
-    margin-left: 20px;
+    margin-left: 10px;
 
+}#textfm span{
+    color:rgb(239, 158, 8);padding:10px;
+    border-radius: 400px;
+    background-color: rgb(255, 248, 234);
 }
 
 #textfm h1 {
