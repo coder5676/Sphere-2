@@ -133,20 +133,30 @@ but.addEventListener("click",()=>{
 
 })
     })
-var e=0;
-var iarr=[`<i class="fa-regular fa-user"></i>`,`<i class="fa-regular fa-circle-user"></i>`,`<i class="fa-solid fa-paper-plane"></i>`,`<i class="fa-solid fa-pen-to-square"></i>`,`<i class="fa-solid fa-pen-fancy"></i>`,`<i class="fa-solid fa-users"></i>`]
-const boxes=document.getElementsByClassName('j1');
-function addanimation(){
+let e = 0;
+const iarr = [
+  `<i class="fa-regular fa-user"></i>`,
+  `<i class="fa-regular fa-circle-user"></i>`,
+  `<i class="fa-solid fa-paper-plane"></i>`,
+  `<i class="fa-solid fa-pen-to-square"></i>`,
+  `<i class="fa-regular fa-user"></i>`,
+  `<i class="fa-regular fa-circle-user"></i>`
+];
+const boxes = document.getElementsByClassName('j1');
+
+function addanimation() {
   boxes[e].classList.add("showanim");
-  document.getElementById("insi").innerHTML=iarr[e];
-  if(e>0){
-  boxes[e-1].classList.remove("showanim");
-  }else if(e==0){
+  document.getElementById("insi").innerHTML = iarr[e];
+  if (e > 0) {
+    boxes[e - 1].classList.remove("showanim");
+  } else if (e === 0) {
     boxes[5].classList.remove("showanim");
   }
-e=(e+1)%6;
+  e = (e + 1) % 6;
 }
-setInterval(addanimation,2000);
+
+setInterval(addanimation, 2000);
+
 var f=0;
 var asrr=["Articles","Blogs","Stories","Welcome","to","sphere"];
 var col=["red","#4169E1","#FF8C00","#3CB371","#6A5ACD","#DAA520"]
