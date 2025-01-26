@@ -608,9 +608,15 @@ max-width: 500px;
     margin-top:50px;
     color:rgb(32, 32, 32);
     font-weight: 900;
+    margin-bottom: 80px;
 
    }#herotext{
-  display:none;
+    position: absolute;
+    top:-0px;
+    z-index: -1;
+    max-height: 400px;
+opacity: 80%;
+
    }#md{
     padding-left: 20px;
    }#r1{
