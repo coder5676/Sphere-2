@@ -419,3 +419,7 @@ function countlikes(likes) {
 document.getElementById("ty").addEventListener("click",()=>{
   document.getElementById("interestsarea").classList.toggle("interestsareashow");
 })
+
+document.getElementById("centerbar").addEventListener("click",()=>{
+document.getElementById("styletop").classList.remove("openstyletop");
+});
