@@ -2,18 +2,19 @@
     position: fixed;
     width:100%;
     height:100%;
-    background-color: rgb(255, 255, 255);
     left:0px;
     margin-top: 50px;
     display:flex;
-    font-family: lexend,Arial, Helvetica, sans-serif;
+    font-family: questrial,Arial, Helvetica, sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: space-around; 
     display:none;
     z-index: 30;
-
-}#form i{
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px white;
+}
+#form i{
     background-color: rgb(255, 255, 255);
     color:rgb(79, 79, 79);
     padding:10px;
@@ -32,15 +33,14 @@
     width:50px;
     height:50px;
     font-size: 40px;
-    position: absolute;
-   top:-20px;
-  
-   left:-20px;
    font-weight: 900;
    background-color: transparent;
+   position: absolute;
+   top:20px;
+   left:20px;
 }#errormsg{
     position: absolute;
-    top:20px;
+    top:100px;
 }
 #signupform{
     width:100%;
@@ -50,7 +50,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    width:500px;
+    max-width:500px;
     height:500px;
     border-radius: 30px;
     display:none;
@@ -81,7 +81,6 @@
     height:500px;
     border-radius: 30px;
 
-
 }@keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
@@ -91,18 +90,27 @@
 #loginform button{
     width:300px;
     border-radius: 30px;
-}#signupform button{
+}
+#signupform button{
     width:300px;
     border-radius: 30px;
-}#login:hover{
+}
+#login:hover{
     text-decoration: underline;
-}#signup:hover{
+}
+#signup:hover{
     text-decoration: underline;
-}.showanim{
+}
+.showanim{
     background-color: black;
     color:white;
-}@media(max-width:700px){
+}
+@media(max-width:700px){
     #form{
         margin-top: 58px;
+    }
+    #cross{
+       top: -20px;
+       left:-40px;
     }
 }
