@@ -26,14 +26,12 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-#topshow button {
-    border: 0px;
-    font-size: 25px;
-    color: rgb(105, 105, 105);
+#topshow button{
     background-color: transparent;
-
+    border: 0px;
+    color:lightslategrey
 }
+
 #togglebut2{
     font-size: 20px;
     margin-right: 20px;
@@ -161,7 +159,12 @@ button {
     overflow-x: hidden;
 }
 
-
+.centerbar button:hover{
+    background-color: rgb(255, 255, 255);
+    bordeR:1px solid grey;
+    color:dodgerblue;
+    transition-duration: 0.4s;
+}
 #elements {
     display: flex;
     overflow-x: auto;
@@ -530,10 +533,15 @@ button {
     font-size: 20px;
     border-radius: 30px;
     margin-top: 30px;
-
+transition-duration: 0.4s;
 
 }
-
+#rightbar button:hover{
+    background-color: rgb(255, 255, 255);
+    bordeR:1px solid grey;
+    color:dodgerblue;
+    transition-duration: 0.4s;
+}
 #rightbar p {
     color: rgb(59, 59, 59);
     border-radius: 30px;
@@ -641,6 +649,7 @@ button {
 
 #styletop button:hover {
     color: dodgerblue;
+    transition-duration: 0.4s;
 }
 
 @media(max-width:700px) {
@@ -1022,7 +1031,7 @@ button {
 }
 
 #ad {
-    width: 97%;
+    width: 96%;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -1030,14 +1039,13 @@ button {
     margin-bottom: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: linear-gradient(130deg, rgb(143, 210, 255), rgb(39, 255, 208));
+    background-color: rgb(221, 239, 255);
 }
 
 #ad i {
     padding: 20px;
     font-size: 50px;
     border-radius: 60px;
-    color: #ffffffad;
 }
 
 #ad h1 {
@@ -1045,22 +1053,28 @@ button {
     padding: 10px;
     border-radius: 20px;
     font-family: lexend, Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
     font-weight: 400;
     text-align: center;
 
 }
 
 #ad button {
-    background-color: #000000;
+    background-color:dodgerblue;
     color: rgb(255, 255, 255);
     width: 140px;
     height: 60px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 17px;
     border: 0px;
     border-radius: 30px;
     margin-right: 20px;
+    transition-duration: 0.4s;
+}#ad button:hover{
+    background-color: rgb(255, 255, 255);
+    bordeR:1px solid grey;
+    color:rgb(0, 0, 0);
+    transition-duration: 0.4s;
 }
 
 #dsg {
@@ -1157,10 +1171,16 @@ button {
     color: rgb(255, 255, 255);
     text-align: center;
     border: 0px;
+    transition-duration: 0.4s;
 
 
 
 
+}#textfm button:hover{
+    background-color: rgb(255, 255, 255);
+    bordeR:1px solid grey;
+    color:dodgerblue;
+    transition-duration: 0.4s;
 }
 
 #tgh {
