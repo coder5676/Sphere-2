@@ -29,7 +29,14 @@
     border:0px;
    background-color: rgb(3, 129, 255);
     color:rgb(255, 255, 255);
-}#cross{
+    transition-duration: 0.4s;
+}#form button:hover{
+    background-color: rgb(255, 255, 255);
+    bordeR:1px solid grey;
+    color:dodgerblue;
+    transition-duration: 0.4s;
+}
+#cross{
     width:50px;
     height:50px;
     font-size: 40px;
