@@ -341,6 +341,11 @@ body {
   display: none;
   margin-top: 20px;
 
+}#flashcardpad button:hover{
+  background-color: rgb(255, 255, 255);
+  bordeR:1px solid grey;
+  color:dodgerblue;
+  transition-duration: 0.4s;
 }
 #ijk{
   width:100%;
@@ -639,4 +644,15 @@ border-radius: 10px;
   }#savef1{
     display:none;
   }
+}
+#save:hover{
+  background-color: rgb(255, 255, 255);
+  bordeR:1px solid grey;
+  color:dodgerblue;
+  transition-duration: 0.4s;
+}#savef1:hover{
+  background-color: rgb(255, 255, 255);
+  bordeR:1px solid grey;
+  color:dodgerblue;
+  transition-duration: 0.4s;
 }
