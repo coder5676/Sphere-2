@@ -10,16 +10,15 @@ body {
 }
 .maincontainer {
     width: 97%;
-    max-width: 800px;
+    max-width: 900px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-self: center;
     padding:20px;
     border-radius: 30px;
-
-
 }
+
 
 #uploaddate {
     font-size: 20px;
@@ -66,7 +65,10 @@ body {
     position: fixed;
     top: 0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 0px rgb(196, 196, 196);
+    transition-duration: 0.4s;
+}
+.slidetopshow{
+    transform: translate(0%,-100%);
 }
 
 #topshow button {
@@ -170,7 +172,7 @@ margin-left: 10px;
 } #topimage2{
    border-radius: 0px;
    border-radius: 10px;
-   height:400px;
+   
    margin-bottom: 50px;
 }#maincontainer h2{
     font-size:35px;
@@ -213,7 +215,10 @@ margin-left: 10px;
     /* Tomato color for the highlighted span */
   }#maincontainer img{
     width:97%;
-    max-width:850px ;
+    max-width:900px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
   }#waiting{
     position: fixed;
     width:100%;
@@ -296,13 +301,23 @@ margin-left: 10px;
         font-size: 16px;
     }#maincontainer h1{
         font-size: 35px;
+        margin-left: 10px;
     }#maincontainer h2{
         font-size: 30px;
-    }#timepast{
+        margin-left: 10px;
+
+    }#maincontainer p{
+        margin-left: 10px;
+    }
+    #timepast{
         font-size: 15px;
+        margin-left: 10px;
+
     }#crimg{
         max-height:40px;
         max-width: 40px;
+        margin-left: 10px;
+
     }#logo{
         font-size: 20px;
         margin-left: 10px;
