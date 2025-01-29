@@ -177,3 +177,18 @@ window.closesidebar=async function(){
   document.getElementById("sidebar").classList.remove("opensidebar");
 
 }
+document.getElementById("maincontainer").addEventListener("scroll", () => {
+  const mainContainer = document.getElementById("maincontainer");
+  const computedStyle = window.getComputedStyle(mainContainer);
+  console.log(computedStyle.marginTop);})
+  
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(y>0){
+      document.getElementById("topshow").classList.add("slidetopshow");
+    }
+    else{
+      document.getElementById("topshow").classList.remove("slidetopshow");
+
+    }
+  })
