@@ -756,3 +756,20 @@ margin-left: 30px;
     }
 
 }
+@keyframes appear{
+    from{
+        opacity:0%;
+        transform: translate(0%,100%) scale(0);
+       
+    }to{
+        opacity:100%;
+        transform: translate(0%,0%) scale(1);
+
+    }
+}
+.gr{
+    transition-duration: 0.5s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
