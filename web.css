@@ -129,7 +129,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
 color:rgb(0, 0, 0);
-background-color: rgb(255, 245, 226);
+
 }#a1{
     width:100%;
     max-width: 400px;
@@ -139,12 +139,12 @@ background-color: rgb(255, 245, 226);
     align-items:center;
 }#a1 p{
     width:200px;
-    background-color:orange;
-    color:rgb(255, 255, 255);
     padding:15px;
     font-size: 20px;
     border-radius: 40px;
     margin-left: 10px;
+    color:black;
+    border: 1px solid dodgerblue;
 }#a2{
     height:300px;
     box-shadow: 0px 0px 20px 0px rgb(150, 150, 150);
@@ -169,9 +169,10 @@ background-color: rgb(255, 245, 226);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     overflow: hidden;
-    border: 2px solid #000000;
+    border: 1px solid #c9c9c9;
 }#show p{
     margin:20px;
 }#show h1{
@@ -327,7 +328,7 @@ font-weight: 400;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
-    background-color: rgb(239, 236, 255);
+    
     border-radius: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -356,10 +357,10 @@ font-weight: 400;
     border-radius: 40px;
     border: 0px;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 60px;
 
  }#share p{
-    background-color: rgb(220, 2, 249);
+ 
     color:white;
     padding:15px;
     border-radius: 30px;
@@ -382,10 +383,9 @@ font-weight: 400;
     background-repeat: no-repeat;
  }
  #ff{
-  color:black;
     font-size: 60px;
     margin-top: 100px;
-    color:mediumslateblue;
+    color:rgb(70, 70, 70);
 
  }#box3{
     width:95%;
@@ -394,10 +394,10 @@ font-weight: 400;
     gap:30px;
     align-items: center;
     justify-content: center;
-    border:1px solid grey;
     border-radius: 30px;
     margin-top: 100px;
     padding-bottom: 30px;
+    margin-bottom: 200px;
 
  }#box3 h1{
     line-height: 60px;
@@ -429,7 +429,7 @@ max-width: 500px;
     background-size:cover;
     background-repeat: no-repeat;
  }#box3 button{
- background-color: rgb(0, 174, 177);
+ background-color: dodgerblue;
  color:white;
     padding:15px;
     bordeR:0px;
@@ -447,7 +447,7 @@ max-width: 500px;
     align-items: center;
     justify-content: center;
     gap:40px;
-   background-color: rgb(225, 240, 255);
+   background-color: rgb(255, 255, 255);
     margin-bottom: 150px;
  }#box2 video{
     width:95%;
@@ -503,18 +503,16 @@ max-width: 500px;
     gap:30px;
  }
 
- #herodiv div{
-    margin-top:80px;
-    width:97%;
-    max-width: 500px;
-    height:80vh;
-    border-radius:30px;
- }#herotext2{
+ #herotext2{
     color:rgb(18, 18, 18);
     font-size: 40px;
+    width:96%;
+    max-width: 500px;
+    line-height: 80p9;
+
  }#animatedtext{
     font-size: 70px;
-    color:rgb(8, 132, 255);
+    color:rgb(125, 125, 125);
     font-weight: 900;
     margin-top: -50px;
     animation:fadeInUp 3s infinite;
@@ -559,7 +557,7 @@ max-width: 500px;
     align-items: center;
     justify-content:space-around;
     gap:40px;
-    background-color: rgb(222, 255, 242);
+  background-color: rgb(255, 255, 255);
     border-radius: 40px;
   }.j1{
     padding:16px;
@@ -571,13 +569,14 @@ max-width: 500px;
     font-weight: 900;
    }
   .progress-container {
-    width: 5px;
+    width: 3px;
     height: 400px;
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    margin-right: -400px;
+    margin-right: -300px;
+    
 }
 
 .progress-bar {
@@ -587,25 +586,13 @@ max-width: 500px;
     position: absolute;
     top: 0;
     animation: fill 14s linear infinite;
-}#insi{
-    max-width: 100%;
-    width:300px;
-    height:300px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 400px;
-  background-color: mediumspringgreen;
-
-
-
-}#insi i{
-    font-size: 200px;
-    color:white;
-    padding:30px;
-    font-weight: 300;
-    
+}
+#insi{
+    width:400px;
+    height:400px;
+    background-image: url("https://nephrodocs.com/wp-content/uploads/2020/04/person-938346346.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #herodiv button:hover{
     background-color: rgb(255, 255, 255);
@@ -633,15 +620,16 @@ max-width: 500px;
     font-size: 70px;
     margin-top:50px;
     color:rgb(32, 32, 32);
-    font-weight: 900;
+    font-weight: 400;
     margin-bottom: 80px;
 
-   }#herotext{
+   }
+   #herotext{
     position: absolute;
-    top:-0px;
+    max-width:300px;
+    max-height:300px;
     z-index: -1;
-    max-height: 400px;
-opacity: 80%;
+    opacity: 50%;
 
    }#md{
     padding-left: 20px;
@@ -695,12 +683,39 @@ margin-left: 30px;
 
 }
 #herotext{
-    background-image: url("https://i.pinimg.com/originals/29/f5/69/29f5699389ac551dfd0705261485e616.gif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:500px;
+    height:500px;
+    background-color: #ffffff;
+    background-color: rgb(233, 233, 233);
+    border-radius: 500px;
+background-image: url("https://www.sv2agw.com/images/sitting-8_r.png");
+background-position: center;
+background-size: 400px;
+background-repeat: no-repeat;
+overflow: visible;
+transition-duration: 0.5s;
+    animation:big linear;
+    animation-timeline:view();
+    animation-range:exit 0;
 
-}#waiting {
+}
+@keyframes big{
+    from{
+        transform: scale(1);
+
+       
+    }to{
+        transform:scale(1.7);
+     
+
+    }
+}
+
+#waiting {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -764,12 +779,13 @@ margin-left: 30px;
     }to{
         opacity:100%;
         transform: translate(0%,0%) scale(1);
+     
 
     }
 }
 .gr{
     transition-duration: 0.5s;
     animation: appear linear;
-    animation-timeline: view();
+    animation-timeline:view();
     animation-range: entry 0;
 }
