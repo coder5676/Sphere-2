@@ -134,19 +134,10 @@ but.addEventListener("click",()=>{
 })
     })
 let e = 0;
-const iarr = [
-  `<i class="fa-regular fa-user"></i>`,
-  `<i class="fa-regular fa-circle-user"></i>`,
-  `<i class="fa-solid fa-paper-plane"></i>`,
-  `<i class="fa-solid fa-pen-to-square"></i>`,
-  `<i class="fa-regular fa-user"></i>`,
-  `<i class="fa-regular fa-circle-user"></i>`
-];
 const boxes = document.getElementsByClassName('j1');
 
 function addanimation() {
   boxes[e].classList.add("showanim");
-  document.getElementById("insi").innerHTML = iarr[e];
   if (e > 0) {
     boxes[e - 1].classList.remove("showanim");
   } else if (e === 0) {
@@ -159,10 +150,8 @@ setInterval(addanimation, 2000);
 
 var f=0;
 var asrr=["Articles","Blogs","Stories","Welcome","to","sphere"];
-var col=["red","#4169E1","#FF8C00","#3CB371","#6A5ACD","#DAA520"]
 function topanim(){
 document.getElementById("animatedtext").innerHTML=asrr[f];
-document.getElementById("animatedtext").style.color=col[f];
 
 f=(f+1)%6;
 }
