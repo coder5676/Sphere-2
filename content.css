@@ -1042,10 +1042,13 @@ transition-duration: 0.4s;
     background-color: rgb(221, 239, 255);
 }
 
-#ad i {
-    padding: 20px;
-    font-size: 50px;
-    border-radius: 60px;
+#ad div {
+    width:400px;
+    height:400px;
+    background-image: url("https://nephrodocs.com/wp-content/uploads/2020/04/person-938346346.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 #ad h1 {
