@@ -600,6 +600,7 @@ max-width: 500px;
     color:dodgerblue;
     transition-duration: 0.4s;
 }
+
 @keyframes fill {
     100%{
         height: 100%;
@@ -635,10 +636,13 @@ max-width: 500px;
     padding-left: 20px;
    }#r1{
     margin-top: -80px;
+    font-size: 30px;
    }
    #box2{
     margin-top: 20px;
     padding-bottom: 20px;
+   }#f3{
+    font-size: 40px;
    }
    #box2 h1{
     font-size: 30px;
@@ -679,9 +683,26 @@ margin-left: 30px;
     transform: scale(0.9);
     margin-right: -20px;
 
+  }.progress-container{
+    margin-right: 20px;
+
+  }#textbox3 h1{
+    font-size: 35px;
+
+  }#textbox3 p{
+    font-size: 20px;
+  }#textbox3{
+    background-color: aliceblue;
+    border-radius: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+  }#ff{
+    font-size: 40px;
   }
 
 }
+
+
 #herotext{
     display:flex;
     flex-wrap: wrap;
