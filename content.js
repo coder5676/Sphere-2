@@ -56,6 +56,7 @@ async function getArticles(Domain) {
       if ((Domain == "all" || data.domain == Domain) && data.type === "article") {
         if (data.likes.length > maxlikes) {
           maxlikes = data.likes.length;
+          topArticle="";
           topArticle = doc;
         }
 
@@ -105,7 +106,8 @@ async function getArticles(Domain) {
           <h1>${topArticle.data().heading}</h1>
           <button onclick="openview('${topArticle.id}')" id="nj">Read article</button>
         </div>`;
-      document.querySelector("#famous").innerHTML +=strf;
+      document.querySelector("#famous").innerHTML=strf;
+      strf="";
     }
 
     document.getElementById("waiting").style.display = "none";
@@ -418,8 +420,11 @@ function countlikes(likes) {
 
 document.getElementById("ty").addEventListener("click",()=>{
   document.getElementById("interestsarea").classList.toggle("interestsareashow");
-})
+});
 
 document.getElementById("centerbar").addEventListener("click",()=>{
 document.getElementById("styletop").classList.remove("openstyletop");
 });
+document.getElementById("centerbar").addEventListener("click",()=>{
+  document.getElementById("interestsarea").classList.remove("interestsareashow");
+  });
