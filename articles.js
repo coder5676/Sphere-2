@@ -191,4 +191,12 @@ document.getElementById("maincontainer").addEventListener("scroll", () => {
       document.getElementById("topshow").classList.remove("slidetopshow");
 
     }
-  })
+  });
+document.getElementById('darkmode').addEventListener('click', function() {
+      const currentColor = document.body.style.backgroundColor;
+      if (currentColor === 'antiquewhite') {
+          document.body.style.backgroundColor = 'white';
+      } else {
+          document.body.style.backgroundColor = 'antiquewhite';
+      }
+  });
