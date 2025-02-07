@@ -5,7 +5,6 @@ text-align: center;
 display:flex;
 align-items: center;
 flex-direction: column;
-     overflow-x: hidden;
 
 }
 #navbar{
@@ -77,29 +76,52 @@ width:110px;
     transition-duration: 0.4s;
 }
 #footer {
-    background-color: #222;
-    color: #7e9299;
+    background-color: #eeeeee;
+    color: #000000;
     text-align: left;
-    padding-left: 20px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family:Questrial, Arial, sans-serif;
     width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #footer h1 {
     margin-bottom: 20px;
     font-size: 1.5em;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding:10px;
+    border-radius: 40px;
+    max-width:500px;
+    width:96%;
+    text-align: center;
+
 }
 
 #footer label {
-    display: block;
     margin: 10px 0;
     font-size: 1em;
+    color:black;
+    border-radius: 30px;
+    padding:10px;
+    max-width:500px;
+    width:96%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid grey;
+
 }
 
 #footer a {
     color: #f8f8f8;
     text-decoration: none;
+    padding:10px;
+    border-radius: 30px;
+    background-color: black;
+    margin-left: 30px;
+    width:60px;
 }
 
 #footer button {
@@ -119,6 +141,10 @@ width:110px;
 #footer p {
     margin: 20px 0;
     font-size: 0.9em;
+    padding:10px;
+    background-color: rgb(225, 225, 225);
+    color:rgb(0, 0, 0);
+    border-radius: 40px;
 }
 
 #events{
