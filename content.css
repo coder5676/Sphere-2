@@ -19,6 +19,7 @@ body {
     z-index: 10;
     justify-content: space-between;
     box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
+    font-family: Comfortaa;
 }
 
 #topshow div {
@@ -29,7 +30,8 @@ body {
 #topshow button{
     background-color: transparent;
     border: 0px;
-    color:lightslategrey
+    color:lightslategrey;
+    font-family: Comfortaa;
 }
 
 #togglebut2{
@@ -80,7 +82,7 @@ button {
     flex-direction: column;
     align-items: left;
     padding-left: 10px;
-    width: 60px;
+    width: 0px;
     color: #000000;
     transform: translate(0%, 0%);
     transition-duration: 0.1s;
@@ -99,38 +101,49 @@ button {
 }
 
 .styletop button {
+    width:100%;
     font-size: 20px;
-    border: 0px;
     color: #000000;
     text-align: left;
-    height: 50px;
+    height: 40px;
     font-weight: 200;
     background-color: transparent;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-family: Questrial, Arial, Helvetica, sans-serif;
+   border:0px;
+    margin-bottom: 10px;
+    font-family: Lexend;
     display: flex;
     align-items: center;
-    font-size: 17px;
+    justify-content: flex-start;
+    font-size: 15px;
     margin-right: 20px;
+    
 }
-
+.styletop p{
+   
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 10;
+    width: fit-content;
+    font-family: Comfortaa;
+    margin-left: 50px;
+}
 .styletop:hover {
     width: 300px;
+    
 }
 
 #styletop i {
 
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    color: rgb(92, 92, 92);
     padding: 10px;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 20px;
 }
 
 #styletop i:hover {
-    background-color: #e8e8e8;
+    background-color: #f3f3f3;
 }
 
 #styletop a {
@@ -179,16 +192,9 @@ button {
 }
 
 #yy {
-    color: rgb(89, 89, 89);
-    border: 1px solid rgb(47, 47, 47);
-    margin-top: 100px;
-    width: 350px;
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 200;
-    border-radius: 30px;
-    font-family: questrial, Arial, Helvetica, sans-serif;
+   width:90%;
+   height:2px;
+   background-color: lightgrey;
 }
 
 #elements2 {
@@ -654,201 +660,6 @@ transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
-@media(max-width:700px) {
-    #userbar{
-        margin-right: 0px;
-    }#userf{
-        margin-right: 0px;
-    }
-    .centerbar {
-        width: 100%;
-        margin-left: -5px;
-    }
-
-    #imgtopstyle {
-        display: none;
-    }
-
-    #topshow h1 {
-        font-size: 18px;
-        margin-left: -10px;
-    }
-
-    #topshow button {
-        font-size: 20px;
-
-    }
-
-    #yy {
-        margin-top: 540px;
-        font-size: 20px;
-        max-width: 200px;
-    }
-
-    .open {
-        display: flex;
-        transform: scaleX(1);
-        position: fixed;
-        overflow: auto;
-        width: 200px;
-        background-color: black;
-        height: 100vh;
-        left: 0;
-        z-index: 3;
-        transition-duration: 0.4s;
-    }
-
-    #text h1 {
-        font-size: 19px;
-    }
-
-    #content-alive h1 {
-        font-size: 30px;
-    }
-
-    #content-alive {
-        width: 100%;
-        overflow-x: hidden;
-        align-items: center;
-    }
-
-    #card {
-        height: 350px;
-    }
-
-    #card h1 {
-        font-size: 20px;
-    }
-
-    #card p {
-        font-size: 15px;
-    }
-
-    #kj p1 {
-        font-size: 13px;
-    }
-
-    #kj p {
-        font-size: 15px;
-    }
-
-    #kj p2 {
-        font-size: 13px;
-    }
-
-    #card2 {
-        flex-direction: row;
-        border-radius: 20px;
-        height: fit-content;
-        width: 97%;
-        padding-bottom: 10px;
-
-    }
-
-    #card2 p {
-        font-size: 15px;
-    }
-
-    #card2 h1 {
-        font-size: 16px;
-        line-height: 20px;
-        margin-top: 0px;
-    }
-
-    #card2 h2 {
-        position: absolute;
-        right: 10px;
-        margin-bottom: 50px;
-        color: white;
-    }
-
-    #card:hover {
-
-        box-shadow: 0px 0px 0px 0px grey;
-        transform: scale(1);
-    }
-
-    #card2:hover {
-        box-shadow: 0px 0px 0px 0px grey;
-        transform: scale(1);
-    }
-
-    #infoimg2 {
-        border-radius: 20px;
-        transform: scale(0.9);
-    }
-
-    #imgfm {
-        position: absolute;
-        top: 70px;
-        max-height: 200px;
-    }
-
-    #textfm {
-        position: absolute;
-        top: 280px;
-        left: 15px;
-        max-height: 300px;
-
-    }
-
-    #textfm h1 {
-        font-size: 20px;
-
-    }
-
-    #textfm button {
-        margin-bottom: 20px;
-    }
-
-    #famous {
-        max-width: 0px;
-    }
-
-    #styletop {
-        transform: translate(-67px, 0px);
-        min-width: 0px;
-    }
-#styletop i{
-    display:none;
-}
-    #styletop button {
-        margin-left: 70px;
-        width:180px;
-        padding-left: 20px;
-        font-weight: 400;
-        background-color: rgb(232, 249, 255);
-        
-    }
-
-    .interestsarea button {
-        transform: translate(20px, 0px);
-    }
-
-    #hj {
-        transform: scale(0.8);
-        margin-left: 30px;
-    }
-
-    #ad {
-        flex-direction: column;
-
-    }
-
-    #ad h1 {
-        margin-left: 20px;
-    }
-
-    #crdimg {
-        border-radius: 20px;
-        width: 96%;
-        margin-bottom: 10px;
-        max-height: 130px;
-    }.interestsarea{
-       padding-right:30px;
-    }
-
-}
 
 #creatorsbar {
     width: 100%;
@@ -1041,16 +852,25 @@ transition-duration: 0.4s;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgb(221, 239, 255);
+    background-color: white;
+    border:2px solid rgb(175, 175, 175);
+    border-radius: 20px;
 }
 
-#ad div {
-    width:400px;
-    height:400px;
+#adimg {
+    width:50%;
+    height:300px;
     background-image: url("https://nephrodocs.com/wp-content/uploads/2020/04/person-938346346.png");
     background-repeat: no-repeat;
     background-position: center;
     
+}#ad div:nth-child(2){
+    display: flex;flex-direction: column;
+    align-items:center;
+}#ad p{
+    font-size: 30px;
+    max-width: 50%;
+    font-family: Comfortaa;
 }
 
 #ad h1 {
@@ -1065,7 +885,7 @@ transition-duration: 0.4s;
 }
 
 #ad button {
-    background-color:dodgerblue;
+    background-color:rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     width: 140px;
     height: 60px;
@@ -1172,7 +992,7 @@ transition-duration: 0.4s;
     margin-right: 20px;
     width: 200px;
     background-color: transparent;
-    background-color: rgb(21, 151, 244);
+background-color: black;
     color: rgb(255, 255, 255);
     text-align: center;
     border: 0px;
@@ -1184,7 +1004,7 @@ transition-duration: 0.4s;
 }#textfm button:hover{
     background-color: rgb(255, 255, 255);
     bordeR:1px solid grey;
-    color:dodgerblue;
+    color:rgb(7, 7, 7);
     transition-duration: 0.4s;
 }
 
@@ -1271,4 +1091,197 @@ transition-duration: 0.4s;
     padding: 15px;
     width: 150px;
     text-align: center;
+}
+@media(max-width:700px) {
+    #userbar{
+        margin-right: 0px;
+    }#userf{
+        margin-right: 0px;
+    }
+    .centerbar {
+        width: 100%;
+        margin-left: -5px;
+    }
+
+    #imgtopstyle {
+        display: none;
+    }
+
+    #topshow h1 {
+        font-size: 18px;
+        margin-left: -10px;
+    }
+
+    #topshow button {
+        font-size: 20px;
+
+    }
+
+     .open {        display: flex;
+        transform: scaleX(1);
+        position: fixed;
+        overflow: auto;
+        width: 200px;
+        background-color: black;
+        height: 100vh;
+        left: 0;
+        z-index: 3;
+        transition-duration: 0.4s;
+    }
+
+    #text h1 {
+        font-size: 19px;
+    }
+
+    #content-alive h1 {
+        font-size: 30px;
+    }
+
+    #content-alive {
+        width: 100%;
+        overflow-x: hidden;
+        align-items: center;
+    }
+
+    #card {
+        height: 350px;
+    }
+
+    #card h1 {
+        font-size: 20px;
+    }
+
+    #card p {
+        font-size: 15px;
+    }
+
+    #kj p1 {
+        font-size: 13px;
+    }
+
+    #kj p {
+        font-size: 15px;
+    }
+
+    #kj p2 {
+        font-size: 13px;
+    }
+
+    #card2 {
+        flex-direction: row;
+        border-radius: 20px;
+        height: fit-content;
+        width: 97%;
+        padding-bottom: 10px;
+
+    }
+
+    #card2 p {
+        font-size: 15px;
+    }
+
+    #card2 h1 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0px;
+    }
+
+    #card2 h2 {
+        position: absolute;
+        right: 10px;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    #card:hover {
+
+        box-shadow: 0px 0px 0px 0px grey;
+        transform: scale(1);
+    }
+
+    #card2:hover {
+        box-shadow: 0px 0px 0px 0px grey;
+        transform: scale(1);
+    }
+
+    #infoimg2 {
+        border-radius: 20px;
+        transform: scale(0.9);
+    }
+
+    #imgfm {
+        position: absolute;
+        top: 70px;
+        max-height: 200px;
+    }
+
+    #textfm {
+        position: absolute;
+        top: 280px;
+        left: 15px;
+        max-height: 300px;
+
+    }
+
+    #textfm h1 {
+        font-size: 20px;
+
+    }
+
+    #textfm button {
+        margin-bottom: 20px;
+      
+    }
+
+   
+
+    .styletop {
+        transform: translate(-30px, 0px);
+        min-width: 0px;
+    }
+    #styletop button {
+        margin-left: 10px;
+        width:180px;
+        padding-left: 20px;
+        font-weight: 400;
+        
+        
+    }
+    #styletop button i{
+        margin-left: 10px;
+    }
+    .interestsarea button {
+        transform: translate(20px, 0px);
+    }#styletop p{
+        margin-left: 30px;
+    }
+
+    #hj {
+        transform: scale(0.8);
+        margin-left: 30px;
+    }
+
+    #ad {
+        flex-direction: column;
+
+    }
+
+    #ad h1 {
+        margin-left: 20px;
+    }
+
+    #crdimg {
+        border-radius: 20px;
+        width: 96%;
+        margin-bottom: 10px;
+        max-height: 130px;
+    }.interestsarea{
+       padding-right:30px;
+    }
+#ad{
+    display: none;
+    width:90%
+}#elements2{
+    margin-top: 440px;
+}
 }
