@@ -149,10 +149,33 @@ function addanimation() {
 setInterval(addanimation, 2000);
 
 var f=0;
-var asrr=["Articles","Blogs","Stories","Welcome","to","sphere"];
+var asrr=["Documentation","Blogs","Articles","Projects","Designs","Insights"];
 function topanim(){
 document.getElementById("animatedtext").innerHTML=asrr[f];
 
 f=(f+1)%6;
 }
 setInterval(topanim,3000);
+document.getElementById("bb1").addEventListener("click", () => {
+  document.getElementById("box2").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("bb2").addEventListener("click", () => {
+  document.getElementById("instructions").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("bb3").addEventListener("click", () => {
+  document.getElementById("show").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("bb4").addEventListener("click", () => {
+  document.getElementById("projects").scrollIntoView({
+    behavior: "smooth"
+  });
+});
